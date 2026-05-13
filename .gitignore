@@ -1,0 +1,18 @@
+cat > .gitignore << 'EOF'
+# Archivos compilados
+*.class
+
+# Driver de SQLite (archivo grande de 13MB)
+sqlite-jdbc-*.jar
+
+# Archivos temporales
+*.log
+error.log
+
+# Configuración local
+.vscode/
+.idea/
+*.swp
+
+# NO incluimos libros.db aquí, queremos subirlo
+EOF
